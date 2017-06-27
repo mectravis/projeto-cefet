@@ -1,0 +1,292 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
+@import url(https://fonts.googleapis.com/css?family=Lato);
+@import 'https://fonts.googleapis.com/css?family=Roboto+Condensed';
+@import url(https://fonts.googleapis.com/css?family=Asap:400i);
+
+div#interface
+{
+	margin: 10px 10px 10px 10px;
+	width: auto;
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+	padding: -20px 50px 10px 50px;
+}
+
+/*Formatação do cabeçalho*/
+
+header#cabecalho
+{
+	display: block;
+	background-color: rgb(57,113,188);
+	border-bottom: 25px rgb(15,64,152) solid;
+	height: 180px;
+	
+}
+
+header#cabecalho hgroup
+{
+	padding: 20px 5px 5px 50px;
+}
+
+header#cabecalho h1
+{
+	font-family: 'Montserrat', sans-serif;
+	color: #ffffff;
+	font-size: 27px;
+	margin: 2px;
+}
+
+header#cabecalho hgroup a
+{
+	text-decoration: none;
+	color: #ffffff;
+}
+
+header#cabecalho hgroup a:hover
+{
+	text-decoration: underline;
+
+}
+
+header#cabecalho div#img
+{	
+	display: block;
+}
+
+header#cabecalho img#imagem
+{
+	position: relative;
+	width: 200px;
+	top: 2%;
+	left:4%;
+}
+
+/*Formatação do menu de navegação do cabeçalho*/
+
+nav#menu
+{
+	display: block;
+}
+
+nav#menu li:hover ul
+{
+	display: block;
+}
+
+nav#menu ul ul
+{
+	position: absolute;
+	width: 100px;
+	height: 75px;
+	margin-left: -43%;
+	margin-top: 11.5%;
+	display: none;
+}
+
+nav#menu ul ul li
+{
+	position: relative;
+	width: 97px;
+}
+
+nav#menu ul#lista
+{
+	list-style: none;
+	position: absolute;
+	margin-left: 47%;
+	margin-top: 3.5%;
+	
+}
+
+nav#menu li
+{
+	display: inline-block;
+	font-family: 'Roboto Condensed', sans-serif;
+	background-color: rgb(15,64,152);
+	padding: 1em;
+	margin-right: -5px;
+	z-index:99;
+}
+
+nav#menu li.item
+{
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	
+}
+
+nav#menu li.item2
+{
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+nav#menu li:hover
+{
+	background-color: #606060;
+	transition: background-color 0.5s;
+}
+
+nav#menu a
+{
+	font-family: 'Source Sans Pro', sans-serif;
+	text-decoration: none;
+	color: #ffffff;
+	list-style: none;
+}
+
+
+/*Formatação do corpo*/
+
+section#corpo
+{
+	display: block;
+	width: 56.5%;
+	float: left;
+}
+
+section#corpo h1
+{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 27px;
+	background-color: rgb(57,113,188);
+	color: #ffffff;
+	margin: 15px;
+	padding: 5px;
+
+}
+
+section#corpo p
+{ 
+	font-family: 'Lato', sans-serif;
+	margin: 15px;
+	margin-left: 25px;
+	margin-right: 25px;
+	text-align: justify;
+}
+  
+section#corpo a 
+{
+	text-decoration: none;
+	color: black;
+}
+
+section#corpo a:hover
+{
+	color: blue;
+}
+
+
+/*Formatação do aside*/
+
+aside#lateral
+{
+	display: block;
+	width: 40%;
+	float: right;
+	margin: 15px;
+	background-color: #cecece;
+}
+
+aside#lateral h1
+{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 27px;
+	background-color: rgb(57,113,188);
+	color: #ffffff;
+	margin: 15px;
+	padding: 5px;
+}
+
+aside#lateral p
+{
+	margin: 5px;
+	margin-left: 25px;
+	text-align: justify;
+	margin-bottom: 10px;
+}
+
+aside#lateral video#video
+{
+	position: relative;
+	width: 95%;
+	height: 300px;
+	padding: 0px 7.5px 5px 7.5px;
+}
+
+aside#lateral img#grupo
+{
+    position: relative;
+    width: 490px;
+    height: 300px;
+    left: 4%;
+    margin-top: -100px;
+
+}
+
+/*Formatação do rodapé*/
+
+footer#rodape
+{
+	height: 110px;
+	border-top: 1px #606060 solid;
+	background-color: rgb(57,113,188);
+	border-top: 25px rgb(15,64,152) solid;
+	margin-top: 5px;
+	clear: both;
+}
+
+footer#rodape div#teste2
+{
+	width: 100%;
+	height: 7%;
+	margin-bottom: 2%;
+}
+
+footer#rodape div#texto
+{
+	position: relative;
+	height: 15%;
+	padding: -20px;
+	left: -2.5%;
+}
+
+
+footer#rodape h1
+{
+	font-size: 13pt;
+	font-family: 'Asap', sans-serif; 
+    	color: white;
+    	margin-left: 20%;
+    	margin-top: 4%;
+}
+
+footer#rodape h2
+{
+	color: white;
+	font-size: 13pt;
+	font-family: 'Asap', sans-serif;
+	margin-left: 88%;
+}
+
+footer#rodape div#img
+{
+	position: absolute;
+	height: 8%;
+	margin-left: 86%;
+}
+
+footer#rodape img#facebook
+{
+	position: relative;
+	margin-bottom: -80%;
+}
+
+footer#rodape img#google
+{
+	position: relative;
+	margin-bottom: -90%;
+}
+
+

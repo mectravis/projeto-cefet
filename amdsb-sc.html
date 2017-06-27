@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Simulador</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="css/hover.css">
+		<link rel="stylesheet" href="css/amdsb.css">
+		<script type="text/javascript" src="js/AMDSB-SC/jquery-3.1.0.min.js"></script>
+        	<script type="text/javascript" src="js/AMDSB-SC/portadora.js"></script>
+        	<script type="text/javascript" src="js/AMDSB-SC/modulante.js"></script>
+        	<script type="text/javascript" src="js/AMDSB-SC/sinal.js"></script>
+		<script type="text/javascript" src="js/AMDSB-SC/espectro3.js"></script>
+        
+	</head>
+	<body>
+		<div id="interface">
+			<header id="cabecalho">
+				<hgroup>
+					<h1>Simulador de Sistemas</br> de Telecomunicações AMDSB/SC</h1>
+				</hgroup>
+
+				<nav id="menu">
+					<ul id="lista">
+						<li class="item hvr-float-shadow"><a href="index.html">INÍCIO</a></li>
+						<li class="hvr-float-shadow"><a href="sobre.html">SOBRE</a></li>
+						<li class="hvr-float-shadow"><a href="#">SIMULADORES</a>
+							<ul id="simuladores">
+								<li><a href="jquery.html">AMDSB</a></li>
+								<li><a href="amdsb-sc.html">AMDSB/SC</a></li>
+							</ul>
+						</Li>
+						<li class="item2 hvr-float-shadow"><a href="fale-conosco.html">FALE CONOSCO</a></li>
+					</ul>
+				</nav>
+			
+			<div id="img">
+				<img src="img2/cefet.png" id="imagem">
+			</div>
+
+			</header>
+
+
+			<section id="corpo">
+
+				<div id="entr-mod">
+					<h1>Sinal modulante</h1>
+					<canvas id ="modulante" width="493.016"  height="250"></canvas>
+					<div id="entradaMod">
+						<p>Amplitude</p>
+						<input type="number" id="ampMod" min="0" max="100" step = "5">
+						<p>Frequencia</p>
+						<select id="myselect">
+			                 <option value="100">3kHz</option>
+							 <option value="75">4kHz</option>
+							 <option value="60">5kHz</option>
+							 <option value="50">6kHz</option>
+							 <option value="37.5">8kHz</option>
+							 <option value="30">10kHz</option>
+						</select>
+
+						<p>Fase</p>
+						<input type="number" id="faseMod" min="0" max="360" step="5">
+					</div>
+				</div>
+
+				<div id="total">
+
+					<h1 id="port">Sinal da portadora</h1>
+					<canvas id ="portadora" width="493.016" height="250"></canvas>
+
+					<div id="entradaPort">
+
+						<p>Amplitude</p>
+						<input type="number" id="ampPort" min="0" max="100" step="5">
+
+						<p>Frequencia</p>
+							<select id="myselect2">
+                                <option value="16.43333">3MHz</option>
+								<option value="12.325">4MHz</option>
+								<option value="9.86">5MHz</option>
+								<option value="8.21666">6MHz</option>
+								<option value="6">10MHz</option>
+							</select>
+						<p>Fase</p>
+						<input type="number" id="fasePort" min="0" max="360" step="5">
+					</div>
+				</div>
+
+			</section>
+
+			<aside id="lateral">
+
+				<div id="final">
+					<h1>Sinal Modulado</h1>
+					<canvas id ="sinal"  width="493.016" height="250" ></canvas>
+				
+					<div id="comandos">
+						<input type="button" id="click" value="Modular">
+						<input type="button" id="tela" value="Ver detalhes">
+						<input type="text" id="indice" placeholder="Índice de Modulação" readonly>
+					</div>
+				</div>
+
+				<article id="lado">
+					<div id="espectro">
+						<h1>Espectro AMDSB/SC</h1>
+						
+						<canvas id="espec" width="493.016"  height="250"></canvas>
+					</div>
+				</article>		
+			</aside>
+
+			<article id="iframe">
+				<div id="div_iframe">
+
+					<img src="img2/img-icone-fechar.png" id="fechar">
+
+					<div id="conteudo">
+						<article id="modulante">
+								<h1>Sinal Modulante</h1>
+								<p>{Aqui entra informção sobre o sinal modulante}</p>
+							</article>
+
+							<article id="portadora">
+								<h1>Sinal da Portadora</h1>
+								<p>{Aqui entra informação sobre o sinal da portadora}</p>
+							</article>
+
+							<article id="modulado">
+								<h1>Sinal Modulado</h1>
+								<p>{Aqui entra informação sobre o sinal modulado}</p>
+							</article>
+					</div>
+					
+					<div id="experiencia">
+						<hgroup>
+							<h1>Experiência AMDSB/SC</h1>
+						</hgroup>
+						<div id="video_exp">
+							<video id="video" controls="controls">
+								
+							</video>
+						</div>	
+					</div>
+				</div>
+				
+			</article>
+
+			<footer id="rodape">
+					<div id="teste2">
+						<div id="img">
+						    <img src="img2/Facebook 2.png" id="facebook" width="30" height="30">
+						    <img src="img2/Google++.png" id="google" width="40" height="40">
+						</div>
+						
+						<div id="texto">
+							<h2>Redes&nbsp;Sociais</h2>
+							<h1>Site desenvolvido pelos alunos do curso técnico de Telecomunicações</h1>
+						</div>
+					
+					</div>
+			</footer>
+		</div>		
+	</body>
+</html>

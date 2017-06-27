@@ -1,0 +1,533 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
+@import url(https://fonts.googleapis.com/css?family=Lato);
+@import 'https://fonts.googleapis.com/css?family=Roboto+Condensed';
+
+div#interface
+{
+	margin: 0.5%;
+	width: 99%;
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+	padding: -20px 50px 10px 50px;
+}
+
+/*Formatação do cabeçalho*/
+
+header#cabecalho
+{
+	display: block;
+	background-color: rgb(57,113,188);
+	border-bottom: 25px rgb(15,64,152) solid;
+	height: 180px;
+	
+}
+
+header#cabecalho hgroup
+{
+	padding: 20px 5px 5px 50px;
+}
+
+header#cabecalho h1
+{
+	font-family: 'Montserrat', sans-serif;
+	color: #ffffff;
+	font-size: 27px;
+	margin: 2px;
+}
+
+header#cabecalho hgroup a
+{
+	text-decoration: none;
+	color: #ffffff;
+}
+
+header#cabecalho hgroup a:hover
+{
+	text-decoration: underline;
+
+}
+
+header#cabecalho div#img
+{	
+	display: block;
+}
+
+header#cabecalho img#imagem
+{
+	position: relative;
+	width: 200px;
+	top: 2%;
+	left:4%;
+}
+
+/*Formatação do menu de navegação do cabeçalho*/
+
+nav#menu
+{
+	display: block;
+	z-index:99;
+	
+}
+
+nav#menu li:hover ul
+{
+	display: block;
+}
+
+nav#menu ul ul
+{
+	position: absolute;
+	width: 100px;
+	height: 75px;
+	margin-left: -43%;
+	margin-top: 11.5%;
+	display: none;
+}
+
+nav#menu ul ul li
+{
+	position: relative;
+	width: 97px;
+}
+
+nav#menu ul#lista
+{
+	list-style: none;
+	position: absolute;
+	margin-left: 47%;
+	margin-top: 3.5%;
+	
+}
+
+nav#menu li
+{
+	display: inline-block;
+	font-family: 'Roboto Condensed', sans-serif;
+	background-color: rgb(15,64,152);
+	padding: 1em;
+	margin-right: -5px;
+	z-index:99;
+}
+
+nav#menu li.item
+{
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	
+}
+
+nav#menu li.item2
+{
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+nav#menu li:hover
+{
+	background-color: #606060;
+	transition: background-color 0.5s;
+}
+
+nav#menu a
+{
+	font-family: 'Source Sans Pro', sans-serif;
+	text-decoration: none;
+	color: #ffffff;
+	list-style: none;
+}
+
+/*Formatação do corpo*/
+
+section#corpo
+{
+	position: relative;
+	display: block;
+	width: 50%;
+	float: left;
+	margin-bottom: 12.5%;
+
+}
+
+section#corpo h1
+{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 27px;
+	background-color: rgb(57,113,188);
+	color: #ffffff;
+	margin: 15px;
+	padding: 5px;
+	padding-left: 20px;
+	align: center;
+	margin-top: 30px;
+}
+
+section#corpo p
+{
+	margin: 5px;
+	margin-left: 10px;
+	text-align: justify;
+}
+
+section#corpo fieldset
+{
+	position: relative;
+	width: 50px;
+}
+
+section#corpo canvas
+{
+	position: relative;
+	border: 1px solid black;
+	border-radius: 4px;
+	left: 5%;
+	width: 90%;
+	height: 250px;
+}
+
+section#corpo canvas#portadora
+{
+	position: relative;
+	border: 1px solid black;
+	left: 5%;
+	width: 90%;
+	height: 250px;
+}
+
+section#corpo div#entradaMod
+{
+	position: relative;
+	border: 1px solid black;
+	border-radius: 4px;
+	width: 90%;
+	left: 5%;
+}
+
+section#corpo div#entradaPort
+{
+	position: relative;
+	border: 1px solid black;
+	border-radius: 4px;
+	width: 90%;
+	left: 5%;
+}
+
+section#corpo div#entradaMod p
+{
+	display: inline-block;
+	font-family: 'Roboto Condensed', sans-serif;
+
+}
+
+section#corpo div#entradaPort p
+{
+	display: inline-block;
+	font-family: 'Roboto Condensed', sans-serif;
+
+}
+
+
+section#corpo div#entradaMod input
+{
+	margin-left: 1.5%;
+
+}
+
+section#corpo div#entradaMod select
+{
+	margin-right: 3%;
+}
+
+section#corpo div#entradaMod p
+{
+	margin-left: 1%;
+}
+
+section#corpo div#entradaPort input
+{
+	margin-left: 1.5%;
+}
+
+section#corpo div#entradaPort select
+{
+	margin-right: 3%;
+}
+
+section#corpo div#entradaPort p
+{
+	margin-left: 0.5%;
+}
+
+section#corpo div#total 
+{
+	position: relative;
+}
+
+section#corpo div#entradaPort
+{
+	position: relative;
+	margin-bottom: -20%;
+}
+
+
+/*Formatação do aside*/
+
+aside#lateral
+{
+	display: block;
+	width: 45.65%;
+	float: right;
+	margin: 15px;
+	height: 100%;
+}
+
+aside#lateral h1
+{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 27px;
+	background-color: rgb(57,113,188);
+	color: #ffffff;
+	margin: 15px;
+	padding: 5px;
+	padding-left: 20px;
+}
+
+aside#lateral p
+{
+	margin: 5px;
+	margin-left: 25px;
+	text-align: justify;
+	margin-bottom: 10px;
+}
+
+aside#lateral canvas#sinal
+{
+	position: relative;
+	border: 1px solid black;
+	border-radius: 4px;
+	left: 5%;
+	width: 90%;
+	height: 250px;
+
+}
+
+aside#lateral div#final
+{
+	position: relative;
+	margin-bottom: -4.5%;
+}
+
+aside#lateral input#click
+{
+	margin-left: 5%;
+	border-radius: 4px;
+}
+
+aside#lateral input#tela
+{
+	margin-left: 5%;
+	border-radius: 4px;
+}
+
+aside#lateral input#indice
+{
+	margin-left: 5%;
+	border-radius: 4px;
+}
+
+aside#lateral div#comandos
+{
+	position: relative;
+	border-radius: 4px;
+	border: 1px solid black;
+	width: 90%;
+	left: 5%;
+	padding-top: 1%;
+	padding-bottom: 1%;
+}
+
+aside#lateral div#comandos p
+{
+	display: inline-block;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+aside#lateral div#comandos input
+{
+	display: inline-block;
+}
+
+article#lado canvas#espec
+{
+	position: relative;
+	border: 1px solid black;
+	border-radius: 4px;
+	left: 7%;
+	width: 90%;
+	height: 250px;
+}
+
+article#lado div#espectro
+{
+	position: relative;
+	top: 100%;
+}
+
+article#lado
+{
+	display: block;
+	width: 100%;
+	float: right;
+	margin: 15px;
+	margin-top: 6.5%;
+}
+
+
+/*Formtação article*/
+
+article#iframe
+{
+	display: none;
+	position: relative;
+	width: 95%;
+	height: 520px;
+	box-shadow: 0px 0px 100px rgba(0,0,0,0.5);
+	border-radius: 8px;
+	background-color: white;
+	margin-right: 5%;
+	margin-left: 2.5%;
+	margin-top: 2.5%;
+}
+
+article#iframe div#div_iframe
+{
+	position: relative;
+	height: 475px;
+}
+
+article#iframe img#fechar
+{
+	position: absolute;
+	left: 97.75%;
+
+}
+
+article#iframe div#conteudo 
+{
+	position: absolute;
+	float: left;
+	width: 52%;
+	margin-left: 0%;
+
+}
+
+article#iframe div#experiencia
+{
+	position: absolute;
+	float: right;
+	width: 45%;
+	margin-right: 0%;
+	left: 52%;
+}
+
+article#iframe div#experiencia video#video
+{
+	width: 95%;
+	margin-left: 5%;
+	margin-right: 3%;
+}
+
+article#iframe h1
+{
+	font-family: 'Montserrat', sans-serif;
+	color: #ffffff;
+	font-size: 27px;
+	background-color: rgb(66,97,117);
+	margin: 15px;
+	padding: 5px;
+	padding-left: 20px;
+	width: 92%;
+}
+
+article#iframe hgroup h1
+{
+	width: 95%;
+	margin-right: 2.5%;
+	margin-left: 2.5%;
+}
+
+article#iframe p
+{
+	font-size: 15px;
+	text-align: justify;
+	width: 97%;
+	margin-left: 3%;
+	margin-right: 3%;
+}
+
+/*Formatação do rodapé*/
+
+footer#rodape
+{
+	height: 110px;
+	border-top: 1px #606060 solid;
+	background-color: rgb(57,113,188);
+	border-top: 25px rgb(15,64,152) solid;
+	margin-top: 5px;
+	clear: both;
+}
+
+footer#rodape div#teste2
+{
+	width: 100%;
+	height: 7%;
+	margin-bottom: 2%;
+}
+
+footer#rodape div#texto
+{
+	position: relative;
+	height: 15%;
+	padding: -20px;
+	left: -2.5%;
+}
+
+
+footer#rodape h1
+{
+	font-size: 13pt;
+	font-family: 'Asap', sans-serif; 
+    	color: white;
+    	margin-left: 20%;
+    	margin-top: 4%;
+}
+
+footer#rodape h2
+{
+	color: white;
+	font-size: 13pt;
+	font-family: 'Asap', sans-serif;
+	margin-left: 88%;
+}
+
+footer#rodape div#img
+{
+	position: absolute;
+	height: 8%;
+	margin-left: 86%;
+}
+
+footer#rodape img#facebook
+{
+	position: relative;
+	margin-bottom: -80%;
+}
+
+footer#rodape img#google
+{
+	position: relative;
+	margin-bottom: -90%;
+}
+
+
+
