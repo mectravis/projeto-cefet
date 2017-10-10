@@ -1,22 +1,22 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 	<head>
 		<title>Simulador</title>
 		<meta charset="utf-8">
 		<link rel="stylesheet" href="css/hover.css">
 		<link rel="stylesheet" href="css/amdsb.css">
-		<script type="text/javascript" src="js/AMDSB/jquery-3.2.1.min.js"></script>
-        	<script type="text/javascript" src="js/AMDSB/portadora.js"></script>
-        	<script type="text/javascript" src="js/AMDSB/modulante.js"></script>
-        	<script type="text/javascript" src="js/AMDSB/sinal.js"></script>
-		<script type="text/javascript" src="js/AMDSB/espectro.js"></script>
+		<script type="text/javascript" src="js/AMDSB-SC/jquery-3.1.0.min.js"></script>
+        	<script type="text/javascript" src="js/AMDSB-SC/portadora.js"></script>
+        	<script type="text/javascript" src="js/AMDSB-SC/modulante.js"></script>
+        	<script type="text/javascript" src="js/AMDSB-SC/sinal.js"></script>
+		<script type="text/javascript" src="js/AMDSB-SC/espectro3.js"></script>
         
 	</head>
 	<body>
 		<div id="interface">
 			<header id="cabecalho">
 				<hgroup>
-					<h1>Simulador de Sistemas</br> de Telecomunicações AMDSB</h1>
+					<h1>Simulador de Sistemas</br> de Telecomunicações 2-PSK</h1>
 				</hgroup>
 
 				<nav id="menu">
@@ -104,7 +104,7 @@
 
 				<article id="lado">
 					<div id="espectro">
-						<h1>Espectro AMDSB</h1>
+						<h1>Espectro 2-PSK</h1>
 						
 						<canvas id="espec" width="493.016"  height="250"></canvas>
 					</div>
@@ -119,27 +119,27 @@
 					<div id="conteudo">
 						<article id="modulante">
 								<h1>Sinal Modulante</h1>
-								<p>&nbsp;&nbsp;&nbsp;Este sinal é a representação elétrica da informação que está sendo transmitida pelo sistema. A informação pode ser a voz de uma pessoa que fala ao telefone, uma imagem transmitida por um aplicativo, um vídeo na internet ou texto em um e-mail. Sua representação em sinal modulante carrega as informações da mensagem impressas em sua amplitude, freqüência e fase.</p>
+								<p>{Aqui entra informção sobre o sinal modulante}</p>
 							</article>
 
 							<article id="portadora">
 								<h1>Sinal da Portadora</h1>
-								<p>&nbsp;&nbsp;&nbsp;É um sinal elétrico criado pelo sistema de telecomunicações para viabilizar a transmissão do sinal modulante através do sistema. O sinal de portadora é necessário devido ao fato de que o sinal modulante possui uma freqüência relativamente baixa para transmissão, o que acarretaria em perdas muito altas. Com o uso de uma portadora de freqüência adequada é possível minimizar as perdas e otimizar o uso do espectro.</p>
+								<p>{Aqui entra informação sobre o sinal da portadora}</p>
 							</article>
 
 							<article id="modulado">
 								<h1>Sinal Modulado</h1>
-								<p>&nbsp;&nbsp;&nbsp;É o sinal resultante do processo de modulação, onde a portadora sofre alterações de um ou mais parâmetros (amplitude, freqüência ou fase) permitindo transportar as características do sinal modulante. Neste trabalho o sinal modulado é gerado pelo processo de modulação em amplitude (AM).</p>
+								<p>{Aqui entra informação sobre o sinal modulado}</p>
 							</article>
 					</div>
 					
 					<div id="experiencia">
 						<hgroup>
-							<h1>Experiência AMDSB</h1>
+							<h1>Experiência 2-PSK</h1>
 						</hgroup>
 						<div id="video_exp">
 							<video id="video" controls="controls">
-								<source src="videos/experiencia_modulacao.mp4" type="video/mp4">
+								
 							</video>
 						</div>	
 					</div>
@@ -150,8 +150,8 @@
 			<footer id="rodape">
 					<div id="teste2">
 						<div id="img">
-						     <a href="#"><img src="img2/Facebook 2.png" id="facebook" width="30" height="30"></a>
-						    <a href="fale-conosco.html"><img src="img2/Google++.png" id="google" width="40" height="40"></a>
+						    <a href="#"><img src="img2/Facebook 2.png" id="facebook" width="30" height="30"></a>
+						   <a href="fale-conosco.html"><img src="img2/Google++.png" id="google" width="40" height="40"></a>
 						</div>
 						
 						<div id="texto">

@@ -1,0 +1,4 @@
+1 - Consultar sobre a faixa de frequência
+2 - Corrigir o espectro
+3 - Corrigir o input de amplitude
+4 - Colocar o formulario 

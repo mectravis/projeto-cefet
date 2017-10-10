@@ -56,13 +56,7 @@ $(document).ready(function(){
         ctxM.moveTo(50,0);
 		ctxM.lineTo(50,250);
 		ctxM.stroke();
-
-        
-        
-        
-        
-        
-        
+  
         
     }
     
