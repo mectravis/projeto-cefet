@@ -1,3 +1,8 @@
-# projeto-cefet
+# Lab-Web
 
-This project was developed by me and some friends in my school. It's a web simulator for Modulation. It was my first big project, so don't expect a well writen code.
+Virtual lab for modulation systems. It's simple, it was used for a congress, so don't expect a lot of features.
+It covers some of the modulation formats:
+-AM(Amplitude Modulation)
+-AMDSB(AM with Double Side Band)
+-PSK(Phase shift keying)
+
