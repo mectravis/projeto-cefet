@@ -3,22 +3,18 @@ $(document).ready(function(){
 	var canvas = document.getElementById("portadora");
 	var ctx = canvas.getContext('2d');
 
-	var init = 0;
-	var inc = 0;
-	var byteArray = [];
-
-	for(var i = 0 ; i < canvas.width/100 + 100; i++){
-		byteArray[i] = (Math.random()*2 > 1? 1 : -1);
-	}
+	init = 0;
+	inc = 0;
+	var id;
 
 	function draw(){
-
-		var ampPort = 45;
-		var period = 100;
-		var velAngular = 2*Math.PI/period;
-		var x = 0;
-		var y = 125;
 		
+		ampPort = $("#ampPort").val();
+		period = $("#myselect2").val()*5;
+		velAngular = 2*Math.PI/period;
+		x = 0;
+		y = 125;
+
 		ctx.strokeStyle = "#33ff77";
 		ctx.lineWidth = 1;
 
@@ -26,22 +22,18 @@ $(document).ready(function(){
 		ctx.fill();
 		ctx.fillRect(0,0,700,400);
 
-		//init = inc;
+		init = inc;
 
-		for(var i = 0 ; i < canvas.width/period + period;i++){
-			var factor = byteArray[i];
-			for(var j = 0 ; j < period;j++){
-				ctx.beginPath();
-				ctx.moveTo(x,y);
-				x++;
-				y = -1*factor*ampPort*Math.sin(init) + 125;
-				init+=velAngular;
-				ctx.lineTo(x,y);
-				ctx.stroke();
-			}
+		for(var i = 0 ; i < 700 + period;i++){
+			ctx.beginPath();
+			ctx.moveTo(x,y);
+			x++;
+			y = ampPort*Math.sin(init) + 125;
+			init+=velAngular;
+			ctx.lineTo(x,y);
+			ctx.stroke();
 		}
-
-		//inc+=velAngular;
+		inc+=velAngular;
 
 		ctx.strokeStyle = "#3333ff";
         ctx.lineWidth = 1;
@@ -54,7 +46,19 @@ $(document).ready(function(){
         ctx.moveTo(50,0);
 		ctx.lineTo(50,250);
 		ctx.stroke();
-
 	}
-	setInterval(draw,16);
+
+	$("#click").click(function(){
+		if(id === null){
+			id = setInterval(draw,16);
+		}else{
+			clearInterval(id);
+			id = setInterval(draw,16);
+		}
+		
+		
+	});
+	
+
+
 });

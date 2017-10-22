@@ -55,19 +55,9 @@ $(document).ready(function(){
         //eixo Y    
         ctxM.moveTo(50,0);
 		ctxM.lineTo(50,250);
-		ctxM.stroke();
-
-        
-        
-        
-        
-        
-        
-        
+		ctxM.stroke();     
     }
-    
-
-    
+  
     $("#click").click(function(){
        setInterval(function(){
            set();
@@ -75,7 +65,5 @@ $(document).ready(function(){
            
            
        },7);
-    })
-    
-
+    });
 });

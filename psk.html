@@ -5,12 +5,11 @@
 		<meta charset="utf-8">
 		<link rel="stylesheet" href="css/hover.css">
 		<link rel="stylesheet" href="css/amdsb.css">
-		<script type="text/javascript" src="js/AMDSB-SC/jquery-3.1.0.min.js"></script>
-        	<script type="text/javascript" src="js/AMDSB-SC/portadora.js"></script>
-        	<script type="text/javascript" src="js/AMDSB-SC/modulante.js"></script>
-        	<script type="text/javascript" src="js/AMDSB-SC/sinal.js"></script>
-		<script type="text/javascript" src="js/AMDSB-SC/espectro3.js"></script>
-        
+		<script type="text/javascript" src="js/PSK/jquery-3.2.1.min.js"></script>
+    	<script type="text/javascript" src="js/PSK/portadora.js"></script>
+    	<script type="text/javascript" src="js/PSK/modulante.js"></script>
+    	<script type="text/javascript" src="js/PSK/sinal.js"></script>
+    	<script type="text/javascript" src="js/PSK/espectro.js"></script>
 	</head>
 	<body>
 		<div id="interface">
@@ -43,27 +42,6 @@
 
 			<section id="corpo">
 
-				<div id="entr-mod">
-					<h1>Sinal modulante</h1>
-					<canvas id ="modulante" width="493.016"  height="250"></canvas>
-					<div id="entradaMod">
-						<p>Amplitude</p>
-						<input type="number" id="ampMod" min="0" max="100" step = "5">
-						<p>Frequencia</p>
-						<select id="myselect">
-			                 <option value="100">3kHz</option>
-							 <option value="75">4kHz</option>
-							 <option value="60">5kHz</option>
-							 <option value="50">6kHz</option>
-							 <option value="37.5">8kHz</option>
-							 <option value="30">10kHz</option>
-						</select>
-
-						<p>Fase</p>
-						<input type="number" id="faseMod" min="0" max="360" step="5">
-					</div>
-				</div>
-
 				<div id="total">
 
 					<h1 id="port">Sinal da portadora</h1>
@@ -76,14 +54,12 @@
 
 						<p>Frequencia</p>
 							<select id="myselect2">
-                                <option value="16.43333">3MHz</option>
-								<option value="12.325">4MHz</option>
-								<option value="9.86">5MHz</option>
-								<option value="8.21666">6MHz</option>
+                                <option value="20">3MHz</option>
+								<option value="15">4MHz</option>
+								<option value="10">5MHz</option>
+								<option value="8">6MHz</option>
 								<option value="6">10MHz</option>
 							</select>
-						<p>Fase</p>
-						<input type="number" id="fasePort" min="0" max="360" step="5">
 					</div>
 				</div>
 
